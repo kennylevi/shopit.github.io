@@ -1,0 +1,118 @@
+@import '../../style';
+
+.header {
+    height: 80px;
+    background-color: #F62F5E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: $fonts;
+    flex-wrap: wrap;
+    box-shadow: 0px -2px 10px 0px #533d3d;
+
+    .logo {
+        flex: 1;
+        margin: 0 0 0 50px;
+
+        h1 {
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 24px;
+            letter-spacing: 5px;
+            line-height: 24px;
+        }
+    }
+
+    .search{
+        flex: 2;
+        position: relative;
+        span {
+            position: absolute;
+            left: 15px;
+            top: 8px;
+        }
+        span .icon {
+            fill: #fff;
+            font-weight: bolder
+        }
+
+        input {
+            border-radius: 30px;
+            background-color: #FA97AF;
+            border: #FA97AF;
+            color: #ffffff;
+            padding: 0 0 0 40px;
+
+            &:focus {
+              border-color: #FA97AF;
+              box-shadow: none;  
+            }
+
+            &::placeholder {
+                color: #ffffff;
+                font-size: 14px;
+            }
+        }
+        
+    }
+
+    .auths{
+        flex: 1;
+        justify-content: flex-end;
+        text-align: right;
+        p {
+            font-weight: 600;
+            color: $textColor;
+            margin-bottom: 0;
+
+            a {
+                color: #ffffff
+            }
+        }
+    }
+
+    .cart {
+        flex: 1;
+         margin: 0 50px 0 0;
+         text-align: right;
+        justify-content: flex-end;
+        position: relative;
+        display: flex;
+
+        span {
+            position: absolute;
+            right: 60px;
+            top: -10px;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 0px 5px 0px 0;
+            color: #F62F5E;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+       .icon {
+           fill: #ffffff;
+       }
+
+       p {
+           margin: 0;
+           padding: 0 0 0 10px;
+           font-size: 13px;
+           color: $textColor;
+           font-weight: 600;
+       }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header{
+        // display: none;
+        flex-direction: column;
+    }
+}

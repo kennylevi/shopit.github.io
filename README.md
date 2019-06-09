@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # shopit
 
 ## Project setup
@@ -27,3 +28,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# shopit.github.io
+My First VueJs Shit
+>>>>>>> a414fb32f0505a8432099a92f904c6d73642c828
